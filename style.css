@@ -1,3 +1,29 @@
+:root{
+    --proporcionalityMovieYToX: 0.562761506;
+}
 html, body{
     margin:0px;
+    background-color: #201c1c;
+    width: max-content;
+    height: max-content;
+}
+
+.animation div{
+    width: 70vw;
+    background-color: wheat;
+    margin: 10px;
+    height: calc(70vw * var(--proporcionalityMovieYToX));
+}
+
+.aniLeft{
+    po
+}
+
+.divVideo iframe{
+    width: 60vw;
+    height: calc(60vw * var(--proporcionalityMovieYToX));
+}
+
+@keyframes{
+    
 }
