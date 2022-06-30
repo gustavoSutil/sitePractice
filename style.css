@@ -8,22 +8,47 @@ html, body{
     height: max-content;
 }
 
-.animation div{
-    width: 70vw;
-    background-color: wheat;
-    margin: 10px;
-    height: calc(70vw * var(--proporcionalityMovieYToX));
+header{
+    width: 100vw;
+    background-color: black;
+    height: 65px;
+    margin-bottom: 45px;
 }
-
-.aniLeft{
-    po
+.logo{
+    max-width: 192px;
+    margin-left: 5vw;
+    margin-top: 5px;
+}
+.divVideo div{
+    position: absolute;
+    top: auto;
+    width: 65vw;
+    height: calc(65vw * var(--proporcionalityMovieYToX)) ;
+    background: linear-gradient(60deg ,
+    #004453,#e2823d,#fbad01,
+    #fbad01,#e2823d,#004453
+    );
+    filter:  blur(0vh);
+    animation: background 15s linear infinite;
+    background-size: 400%;
+    filter: blur(20px);
+    z-index: 2;
+}
+@keyframes background{
+    0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 400% 0;
+	}
 }
 
 .divVideo iframe{
-    width: 60vw;
+    position: absolute;
+    z-index: 3;
+    margin-left: calc(5vw / 2);
+    margin-top: calc((5vw * var(--proporcionalityMovieYToX)) / 2);
+    width: 60vw ;
     height: calc(60vw * var(--proporcionalityMovieYToX));
 }
 
-@keyframes{
-    
-}
