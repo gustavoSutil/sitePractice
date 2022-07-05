@@ -13,12 +13,30 @@ header{
     background-color: black;
     height: 65px;
     margin-bottom: 45px;
+    list-style-image: none;
 }
 .logo{
     max-width: 192px;
     margin-left: 17.5vw;
     margin-top: 5px;
 }
+
+
+.ContatoImg input{
+    height: 50px;
+    width: 50px;
+}
+.ContatoImg input:hover{
+    animation: iconEvent 500ms step-start infinite;
+}
+@keyframes iconEvent {
+    to{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
 .divVideo{
     margin-left: 17.5vw;
     margin-right: 17.5vw;
@@ -38,14 +56,7 @@ header{
     filter: blur(20px);
     z-index: 2;
 }
-@keyframes background{
-    0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: 400% 0;
-	}
-}
+
 
 .divVideo iframe{
     position: absolute;
@@ -54,5 +65,14 @@ header{
     margin-top: calc((5vw * var(--proporcionalityMovieYToX)) / 2);
     width: 60vw ;
     height: calc(60vw * var(--proporcionalityMovieYToX));
+}
+
+@keyframes background{
+    0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 400% 0;
+	}
 }
 

@@ -1,4 +1,4 @@
-function alealertCopiado(mensage){
+function alertCopiado(mensage){
     navigator.clipboard.writeText(mensage);
-    window.alert(mensage);
+    window.alert("O texto foi copiado:\n" + mensage);
 }
