@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 :root{
     --proporcionalityMovieYToX: 0.562761506;
 }
@@ -6,7 +7,11 @@ html, body{
     background-color: #201c1c;
     width: max-content;
     height: max-content;
+
 }
+
+
+/*header*/
 
 header{
     width: 100vw;
@@ -15,26 +20,76 @@ header{
     margin-bottom: 45px;
     list-style-image: none;
 }
+.menu{
+    display: none;
+}
 .logo{
     max-width: 192px;
     margin-left: 17.5vw;
     margin-top: 5px;
 }
-
-
-.ContatoImg input{
-    height: 50px;
-    width: 50px;
+#list{
+    display: inline;
+    margin: 0px;
+    margin-right: 10vw;
 }
-.ContatoImg input:hover{
+.contatoImg{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.contatoImg input{
+    margin-right: 6px;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+.contatoImg input:hover{
     animation: iconEvent 500ms step-start infinite;
 }
 @keyframes iconEvent {
     to{
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
+        margin-top: 5px;
     }
 }
+
+@media only screen and (max-width: 700px) {
+    .menu{
+        display: list-item ;
+        margin:10px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .menu div{
+        width: 35px;
+        height: 5px;
+        background-color: #ffff;
+        margin: 6px 0;
+    }
+    #list{
+        display: none;
+        margin: 0px;
+        margin-right: 10vw;
+        position: absolute;
+        right: -45px;
+        top: 65px;
+    }
+    .contatoImg,ul{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .contatoImg input{
+        height: 40px;
+        width: 40px;
+        margin-top: 10px;
+    }
+}
+
+/*body*/
 
 
 .divVideo{
@@ -76,3 +131,15 @@ header{
 	}
 }
 
+.text h1{
+    text-align:center;
+}
+.text{
+    position: relative;
+    top: calc(70vw * var(--proporcionalityMovieYToX));
+    font-weight:100;
+    font-family:'Roboto';
+    color: white;
+    word-break: normal;
+    width: 75vw;
+}

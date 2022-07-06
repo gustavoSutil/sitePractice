@@ -3,9 +3,9 @@
 <html lang="pt-br">
 <head>
     <link  rel="shortcut icon" href="./img/iconSitewhite.ico">
-    <meta name="theme-color" content="#000000" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
-    <meta name="msapplication-navbutton-color" content="#000000" />
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,22 +15,32 @@
 </head>
 <body>
     <header>
-        <input title="Ir para Practice UFFS" class="logo" type="image" onclick="window.open('https://practice.uffs.edu.br/')" src="./img/logo.png">
-        <div class="ContatoImg">
-            <ul>
-                <input title="Copiar e-mail Practice" type="image" src="./img/E-mail preenchido branco.png" onclick="alertCopiado('practice@uffs.edu.br')">
-                <input title="Ir para GitHub Practice" type="image" src="./img/Github preenchido branco.png" onclick="window.open('https://github.com/practice-uffs')">
-                <input title="" type="" src="" onclick="">
-                <input title="" type="" src="" onclick="">
-                <input title="" type="" src="" onclick="">
+        <input title="Ir para PRACTICE UFFS" class="logo" type="image" onclick="window.open('https://practice.uffs.edu.br/')" src="./img/logo.png">
+        <div class="menu" onclick="setContato()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="contatoImg">
+            <ul id="list">
+                <input title="Copiar e-mail PRACTICE" type="image" src="./img/E-mail preenchido branco.png" onclick="alertCopiado('practice@uffs.edu.br')">
+                <input title="Ir para GitHub PRACTICE" type="image" src="./img/Github preenchido branco.png" onclick="window.open('https://github.com/practice-uffs')">
+                <input title="Ir para Facebook PRACTICE" type="image" src="./img/Fb preenchido branco.png" onclick="window.open('https://www.facebook.com/Practice-UFFS-104348284683285/')">
+                <input title="Ir para YouTube PRACTICE" type="image" src="./img/YouTube preenchido branco.png" onclick="window.open('https://www.youtube.com/channel/UCu3jAl8MTMPkaxb3u0_xESw?view_as=subscriber/')">
+                <input title="Ir para Twitter PRACTICE" type="image" src="./img/Twitter preenchido branco.png" onclick="window.open('https://twitter.com/PracticeUFFS/')">
+                <input title="Ir para Instagram PRACTICE" type="image" src="./img/Instagram preenchido branco.png" onclick="window.open('https://www.instagram.com/practiceuffs/')">
             </ul>
         </div>
     </header>
     <div></div>
     <div class="divVideo">
         <!--iframe para video (carrega sozinho com som) e o deixa em loop-->
-        <iframe id="movie" src="https://www.youtube.com/embed/V6kS3fPytiQ?autoplay=1&mute=0&loop=1&playlist=V6kS3fPytiQ" title="Practice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="movie" src="https://www.youtube.com/embed/V6kS3fPytiQ?autoplay=1&mute=0&loop=1&playlist=V6kS3fPytiQ" title="PRACTICE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div></div>
+    </div>
+    <div class="text">
+        <h1>Sobre o PRACTICE</h1>
+        <p>PRACTICE é um programa de ensino, pesquisa, extensão e inovação da Universidade Federal da Fronteira Sul (UFFS), que tem como objetivo estruturar ambientes, capacitar agentes educacionais, produzir e mediar a produção de conteúdos educacionais. A filosofia é promover e democratizar tecnologia e inovação, do cotidiano até o processo de aprendizagem.</p>
     </div>
     <!-- in footer content: legal information desenvolved by gustavo and social medias-->
     <footer></footer>
